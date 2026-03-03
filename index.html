@@ -325,6 +325,37 @@
     }
     .cta:active { transform: translateY(0); }
 
+    /* Download App Button */
+    .cta-download {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      background: transparent;
+      color: var(--gold);
+      border: 2px solid var(--gold);
+      border-radius: 12px;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 20px;
+      letter-spacing: 2px;
+      padding: 16px 20px;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform 0.15s, box-shadow 0.15s, background 0.2s, color 0.2s;
+      margin-top: 12px;
+    }
+    .cta-download:hover {
+      background: rgba(245,197,24,0.12);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 20px rgba(245,197,24,0.25);
+    }
+    .cta-download:active { transform: translateY(0); }
+    .cta-download .dl-icon {
+      font-size: 22px;
+    }
+
     @keyframes shimmer {
       0% { left: -100%; }
       50% { left: 150%; }
@@ -645,6 +676,10 @@
       Ir al registro →
     </button>
 
+    <a class="cta-download" href="https://bwredir.com/1pIm?p=%2Fmobile%2F" target="_blank" rel="noopener noreferrer">
+      <span class="dl-icon">📲</span> Descargar la App
+    </a>
+
     <div class="steps">
       <div class="step">
         <div class="step-num">1</div>
@@ -733,11 +768,6 @@
     <div class="modal-title">¡Código copiado!</div>
     <div class="modal-code">ARGENTINA</div>
     <p class="modal-desc">El código fue copiado automáticamente. Recordá pegarlo en el campo "Código promocional" durante el registro.</p>
-    <p class="modal-countdown">Redirigiendo en <span id="countdown">4</span> segundos...</p>
-    <div class="modal-actions">
-      <button class="modal-btn modal-btn-primary" id="goNowBtn" onclick="goNow()">Ir ahora →</button>
-      <button class="modal-btn modal-btn-secondary" onclick="closeModal()">Cancelar</button>
-    </div>
   </div>
 </div>
 
@@ -771,31 +801,21 @@
     });
   }
 
-  /* ---- CTA → copy + modal ---- */
+  /* ---- CTA → copy + redirect immediately ---- */
   function handleCTA(e) {
     e.preventDefault();
     doCopy().then(() => {
       const btn = document.getElementById('copyBtn');
       btn.textContent = '¡Copiado!';
       btn.classList.add('copied');
-      openModal();
+      redirect();
     });
   }
 
-  /* ---- Modal ---- */
+  /* ---- Modal (used only if needed) ---- */
   function openModal() {
     const modal = document.getElementById('modal');
     modal.classList.add('active');
-    let secs = 4;
-    document.getElementById('countdown').textContent = secs;
-    countdownTimer = setInterval(() => {
-      secs--;
-      document.getElementById('countdown').textContent = secs;
-      if (secs <= 0) {
-        clearInterval(countdownTimer);
-        redirect();
-      }
-    }, 1000);
   }
 
   function closeModal() {
