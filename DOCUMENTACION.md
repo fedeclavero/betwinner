@@ -8,6 +8,12 @@ Landing page para el registro en Betwinner Argentina con el código promocional 
 
 ---
 
+## ⚠️ Regla de despliegue
+
+> **Cada vez que se implemente una actualización, se debe pushear automáticamente a GitHub** (`git add . && git commit && git push`). El sitio se despliega vía Cloudflare Pages conectado al repositorio, por lo que el push activa el deploy automáticamente.
+
+---
+
 ## Historial de Cambios
 
 ### 2026-03-02 — Botón Descargar App + Eliminación de retraso en registro
@@ -18,7 +24,7 @@ Landing page para el registro en Betwinner Argentina con el código promocional 
 - Se agregó un botón **"📲 Descargar la App"** debajo del CTA principal ("Ir al registro").
 - Estilo: borde dorado (`var(--gold)`), fondo transparente, con efecto hover que ilumina el fondo.
 - Link: `https://bwredir.com/1pIm?p=%2Fmobile%2F`
-- Se abre en una nueva pestaña (`target="_blank"`).
+- Se abre en la misma pestaña (sin `target="_blank"`), igual que el botón de registro.
 
 #### ✅ Eliminación del retraso al registrarse
 - Anteriormente, al hacer clic en "Ir al registro", se mostraba un modal con un countdown de 4 segundos antes de redirigir.
