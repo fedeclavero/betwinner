@@ -43,3 +43,45 @@ Landing page para el registro en Betwinner Argentina con el código promocional 
 - **Favicon** personalizado de Betwinner.
 - **Archivos SEO**: `sitemap.xml` y `robots.txt`.
 - **Diseño premium** dark-themed con animaciones, glassmorphism y tipografías Google Fonts (Bebas Neue, DM Sans).
+
+---
+
+### 2026-03-03 21:58 — Maximización SEO para Google Search Console
+
+**Archivos modificados:** `index.html`, `sitemap.xml`
+
+#### ✅ Meta tags ampliados (`index.html`)
+- `<html lang>` actualizado de `es` a `es-AR`.
+- `<meta name="keywords">` expandido de 8 a ~40 términos: "cómo apostar en Argentina", "cómo retirar dinero Betwinner", "tutorial apuestas Argentina", "apuestas fútbol Argentina", "Betwinner MercadoPago", "bono primer deposito Argentina", etc.
+- `<meta name="description">` enriquecida con frases de búsqueda adicionales.
+- `<meta name="robots">` ampliado con `max-snippet:-1, max-image-preview:large, max-video-preview:-1`.
+- Nuevos meta tags: `revisit-after`, `language`, `rating`, `classification`, `category`, `coverage`, `distribution`, `target`, `HandheldFriendly`, `MobileOptimized`, `theme-color`, `msapplication-TileColor`.
+
+#### ✅ Geo Targeting
+- `geo.region` = AR, `geo.country` = Argentina, `geo.placename` = Argentina, `ICBM` con coordenadas de Buenos Aires, `DC.title`.
+
+#### ✅ Hreflang
+- `hreflang="es-ar"`, `hreflang="es"` y `hreflang="x-default"` para señalizar idioma/región a Google.
+
+#### ✅ Open Graph y Twitter Card mejorados
+- OG: agregado `og:image:alt`, `og:updated_time`, descripción más rica.
+- Twitter: agregado `twitter:image:alt`, `twitter:site`, `twitter:creator`.
+
+#### ✅ Preconnect / DNS-Prefetch
+- `preconnect` a Google Fonts y YouTube. `dns-prefetch` a bwredir.com y google-analytics.com.
+
+#### ✅ JSON-LD Structured Data — 5 schemas separados (nuevo)
+- **WebPage**: enriquecido con `datePublished`, `dateModified`, `isPartOf (WebSite)`, imagen y publisher con logo.
+- **Organization** (nuevo): con `areaServed: Argentina` y `contactPoint`.
+- **BreadcrumbList** (nuevo): navegación estructurada para Google.
+- **VideoObject** (nuevo): schema para el tutorial de YouTube con `thumbnailUrl`, `embedUrl`, `contentUrl`.
+- **FAQPage** (nuevo, separado): 10 preguntas/respuestas sobre depósitos, retiros, MercadoPago, legalidad, app y fútbol argentino.
+
+#### ✅ FAQ visible en HTML expandida
+- De 5 a 10 preguntas visibles: métodos de depósito, monto del bono, confiabilidad, fútbol argentino y app móvil.
+
+#### ✅ `sitemap.xml` actualizado
+- `lastmod` → `2026-03-03`, `changefreq` → `weekly`.
+- Agregados namespace de imagen y video de Google Sitemaps.
+- Bloque `<image:image>` con la og-image y bloque `<video:video>` con el tutorial de YouTube.
+
