@@ -254,7 +254,7 @@
         "name": "¿Cuánto es el bono de bienvenida de Betwinner Argentina?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "El bono de bienvenida de Betwinner Argentina es de hasta $72.500 ARS en tu primer depósito cuando usás el código promocional ARGENTINA. Es un bono del 100% sobre tu depósito inicial en apuestas deportivas."
+          "text": "El bono de bienvenida para deportes es del 100% hasta $72.500 ARS. Para el casino, el paquete es de hasta $1.200.000 ARS más 150 giros gratis cuando usás el código promocional ARGENTINA."
         }
       },
       {
@@ -973,6 +973,23 @@
 <body>
   <div class="wrap">
 
+    <!-- ===== BUTTONS / LINKS TO CLUSTER GUIDES ===== -->
+    <div class="cluster-links"
+      style="max-width: 520px; width: 100%; margin-top: 20px; display: grid; grid-template-columns: 1fr; gap: 10px; animation: fadeUp 0.7s ease 0.4s both;">
+      <p
+        style="text-align: center; font-size: 14px; color: var(--gold); font-family: 'Bebas Neue', sans-serif; letter-spacing: 1px;">
+        📚 Guías y Tutoriales:</p>
+      <a href="/guia-depositos-betwinner-argentina.html"
+        style="background: rgba(255,255,255,0.05); color: var(--white); text-decoration: none; padding: 12px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1); font-size: 13px; text-align: center; transition: background 0.2s;">Guía
+        de Depósitos (Mercado Pago)</a>
+      <a href="/guia-apuestas-deportivas-argentina.html"
+        style="background: rgba(255,255,255,0.05); color: var(--white); text-decoration: none; padding: 12px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1); font-size: 13px; text-align: center; transition: background 0.2s;">Estrategia
+        de Apuestas Deportivas</a>
+      <a href="/guia-casino-online-betwinner-argentina.html"
+        style="background: rgba(255,255,255,0.05); color: var(--white); text-decoration: none; padding: 12px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.1); font-size: 13px; text-align: center; transition: background 0.2s;">Casino
+        Online y Tragamonedas</a>
+    </div>
+
     <!-- ===== HEADER ===== -->
     <header class="logo-area">
       <h1 class="brand">Bet<span>winner</span></h1>
@@ -980,53 +997,136 @@
     </header>
 
     <!-- ===== CARD PRINCIPAL ===== -->
-    <main class="card">
-      <h2 class="card-title">Tu bono de bienvenida</h2>
-      <p class="card-desc">Registrate ahora y recibí tu bono de bienvenida. Ingresá el código antes de completar el
-        registro.</p>
+    <div class="card">
+      <h1 class="card-title">Betwinner Argentina 🇦🇷</h1>
+      <p class="card-desc">
+        Bienvenido al portal oficial de afiliados de <strong>Betwinner en Argentina</strong>. Si buscás una plataforma
+        segura, con las mejores cuotas del mercado y depósitos en pesos vía <strong>Mercado Pago</strong>, estás en el
+        lugar correcto. Usá nuestro código oficial para maximizar tu primer depósito.
+      </p>
 
       <div class="bonus-box">
-        <div class="bonus-icon" aria-hidden="true">⚽</div>
+        <div class="bonus-icon">🏆</div>
         <div class="bonus-text">
-          <div class="amount">Hasta $72.500 ARS</div>
-          <div class="label">Bono deportes · 1er depósito</div>
+          <div class="label">Bono Deportes</div>
+          <div class="amount">100% hasta $72.500 ARS</div>
         </div>
       </div>
 
-      <p class="promo-label">Código promocional</p>
-      <div class="promo-box" id="promoBox" onclick="copyCode()">
-        <div class="promo-code">ARGENTINA</div>
-        <button class="copy-btn" id="copyBtn" aria-label="Copiar código promocional">Copiar</button>
+      <div class="bonus-box"
+        style="border-color: rgba(22, 160, 133, 0.5); background: linear-gradient(135deg, rgba(22, 160, 133, 0.1) 0%, rgba(26, 122, 60, 0.1) 100%);">
+        <div class="bonus-icon">🎰</div>
+        <div class="bonus-text">
+          <div class="label">Bono Casino</div>
+          <div class="amount">Hasta $1.200.000 ARS + 150 GS</div>
+        </div>
       </div>
-      <p class="promo-hint">↑ Copiá el código y pegalo en el campo "Código promocional" al registrarte</p>
 
-      <button class="cta" id="ctaBtn" onclick="handleCTA(event)">
-        Ir al registro →
-      </button>
+      <div class="promo-label">CÓDIGO PROMOCIONAL OFICIAL:</div>
+      <div class="promo-box" id="copyCode">
+        <span class="promo-code" id="promoCodeText">ARGENTINA</span>
+        <button class="copy-btn" id="copyBtn">Copiar</button>
+      </div>
+      <p class="promo-hint">Copiá este código y pegalo al registrarte para activar el bono.</p>
 
-      <a class="cta-download" href="https://bwredir.com/1pIm?p=%2Fmobile%2F">
-        <span class="dl-icon">📲</span> Descargar la App
+      <a href="https://bwredir.com/ARGENTINA" class="cta" id="mainCta">IR AL REGISTRO OFICIAL</a>
+
+      <a href="https://bwredir.com/ARGENTINA-APP" class="cta-download">
+        <span class="dl-icon">📲</span> DESCARGAR APP (ANDROID/IOS)
       </a>
 
       <div class="steps">
         <div class="step">
           <div class="step-num">1</div>
-          <span>Copiá el código <strong style="color:var(--gold)">ARGENTINA</strong> haciendo click arriba</span>
+          <p>Hacé clic en el botón verde para ir al sitio oficial.</p>
         </div>
         <div class="step">
           <div class="step-num">2</div>
-          <span>Hacé click en "Ir al registro" y completá tus datos</span>
+          <p>Completá el registro usando el código <strong>ARGENTINA</strong>.</p>
         </div>
         <div class="step">
           <div class="step-num">3</div>
-          <span>Pegá el código en el campo <em>"Código promocional"</em> antes de confirmar</span>
-        </div>
-        <div class="step">
-          <div class="step-num">4</div>
-          <span>Realizá tu primer depósito y recibí tu bono automáticamente</span>
+          <p>Realizá tu primer depósito y recibí tu bono automáticamente.</p>
         </div>
       </div>
-    </main>
+    </div>
+
+    <!-- ===== PILLAR CONTENT SECTION (SEO EXPANSION) ===== -->
+    <section class="seo-expansion"
+      style="max-width: 800px; margin-top: 60px; padding: 40px; background: rgba(0,0,0,0.3); border-radius: 20px; border: 1px solid rgba(255,255,255,0.05);">
+      <h2 style="font-family: 'Bebas Neue', sans-serif; font-size: 36px; color: var(--gold); margin-bottom: 20px;">Todo
+        sobre Betwinner Argentina: La Guía Definitiva 2026</h2>
+
+      <p style="margin-bottom: 15px; line-height: 1.8; color: var(--gray);">Betwinner se ha consolidado como la casa de
+        apuestas líder en <strong>Argentina</strong> gracias a su gran adaptabilidad al mercado local. No solo ofrece
+        una interfaz intuitiva, sino que ha integrado los métodos de pago que los argentinos realmente usan, como
+        <strong>Mercado Pago</strong> y transferencias bancarias directas.
+      </p>
+
+      <h3 style="font-family: 'Bebas Neue', sans-serif; font-size: 28px; color: var(--white); margin: 30px 0 15px;">¿Por
+        qué elegir Betwinner en Argentina?</h3>
+      <p style="margin-bottom: 15px; line-height: 1.8; color: var(--gray);">Operar en pesos argentinos (ARS) es una de
+        las mayores ventajas. Olvidate de las complicaciones con el cambio de moneda o comisiones excesivas. En
+        Betwinner, el valor de tu plata es real y directo.</p>
+      <ul style="margin-bottom: 20px; padding-left: 20px; color: var(--gray); line-height: 1.8;">
+        <li><strong>Cuotas insuperables:</strong> Especialmente en fútbol argentino (Liga Profesional).</li>
+        <li><strong>Depósitos inmediatos:</strong> Usando Mercado Pago con acreditación en segundos.</li>
+        <li><strong>Seguridad garantizada:</strong> Licencia internacional y soporte en español 24/7.</li>
+        <li><strong>App veloz:</strong> Una experiencia fluida para apostar desde el celular en el bondi o en la cancha.
+        </li>
+      </ul>
+
+      <h3 style="font-family: 'Bebas Neue', sans-serif; font-size: 28px; color: var(--white); margin: 30px 0 15px;">Bono
+        de Bienvenida: Deportes vs Casino</h3>
+      <p style="margin-bottom: 15px; line-height: 1.8; color: var(--gray);">Al registrarte con el código
+        <strong>ARGENTINA</strong>, tenés dos caminos épicos:
+      </p>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 30px;">
+        <div
+          style="padding: 20px; border: 1px solid rgba(245, 197, 24, 0.2); border-radius: 12px; background: rgba(255,255,255,0.02);">
+          <h4 style="color: var(--gold); margin-bottom: 10px;">Apuestas Deportivas</h4>
+          <p style="font-size: 14px;">Recibí el <strong>100% de tu primer depósito hasta $72.500 ARS</strong>. Ideal
+            para los que siguen el fútbol, básquet y tenis.</p>
+        </div>
+        <div
+          style="padding: 20px; border: 1px solid rgba(26, 122, 60, 0.3); border-radius: 12px; background: rgba(255,255,255,0.02);">
+          <h4 style="color: var(--green-light); margin-bottom: 10px;">Casino & Games</h4>
+          <p style="font-size: 14px;">Un paquete masivo de hasta <strong>$1.200.000 ARS + 150 giros gratis</strong>
+            distribuidos en tus primeros 4 depósitos.</p>
+        </div>
+      </div>
+
+      <h3 style="font-family: 'Bebas Neue', sans-serif; font-size: 28px; color: var(--white); margin: 30px 0 15px;">Cómo
+        depositar en Betwinner con Mercado Pago</h3>
+      <p style="margin-bottom: 15px; line-height: 1.8; color: var(--gray);">Es el método preferido en el país. El
+        proceso es simple:</p>
+      <ol style="margin-bottom: 20px; padding-left: 20px; color: var(--gray); line-height: 1.8;">
+        <li>Iniciá sesión y andá a la sección de "Depósitos".</li>
+        <li>Seleccioná <strong>Mercado Pago</strong> o "Sistemas de pago locales".</li>
+        <li>Ingresá el monto (mínimo $5.000 ARS recomendado para el bono).</li>
+        <li>Seguí las instrucciones de la pasarela y ¡listo! Tu saldo se actualiza al instante.</li>
+      </ol>
+
+      <h3 style="font-family: 'Bebas Neue', sans-serif; font-size: 28px; color: var(--white); margin: 30px 0 15px;">
+        Apuestas en Fútbol Argentino</h3>
+      <p style="margin-bottom: 15px; line-height: 1.8; color: var(--gray);">Si sos fanático de la Liga de los Campeones
+        del Mundo, Betwinner es tu lugar. Podés apostar en cada partido de <strong>Boca, River, Racing,
+          Independiente</strong> y todos los equipos de primera y segunda división. Mercados disponibles: resultado
+        final, córners, tarjetas, goleadores y hándicap asiático.</p>
+
+      <h3 style="font-family: 'Bebas Neue', sans-serif; font-size: 28px; color: var(--white); margin: 30px 0 15px;">
+        Atención al Cliente local</h3>
+      <p style="margin-bottom: 15px; line-height: 1.8; color: var(--gray);">Betwinner ofrece soporte en español vía chat
+        en vivo 24/7. Si tenés dudas sobre una apuesta o un retiro, un agente te ayudará en tu idioma de forma
+        inmediata.</p>
+
+      <div
+        style="margin-top: 40px; text-align: center; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 30px;">
+        <p style="font-style: italic; color: var(--gray);">"Con Betwinner Argentina, llevé mi pasión por el fútbol a
+          otro nivel. Los retiros por Mercado Pago son un golazo." — Juan P., usuario verificado.</p>
+      </div>
+    </section>
 
     <!-- ===== VIDEO TUTORIAL ===== -->
     <section class="video-section">

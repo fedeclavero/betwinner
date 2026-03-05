@@ -4,14 +4,8 @@
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://bwacceso.com.ar/</loc>
-    <lastmod>2026-03-03</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-03-05</lastmod>
     <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://bwacceso.com.ar/og-image.png</image:loc>
-      <image:title>Betwinner Argentina - Bono de bienvenida $72.500 ARS con código ARGENTINA</image:title>
-      <image:caption>Registrate en Betwinner Argentina con el código ARGENTINA y ganá hasta $72.500 ARS</image:caption>
-    </image:image>
     <video:video>
       <video:thumbnail_loc>https://img.youtube.com/vi/xIaJJ-Gi9wA/maxresdefault.jpg</video:thumbnail_loc>
       <video:title>Tutorial: Cómo registrarse en Betwinner Argentina con código promocional</video:title>
